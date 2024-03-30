@@ -4,6 +4,9 @@ async function getCurrentWeatherData(city) {
   const apiData = await fetch(
     `https://api.weatherapi.com/v1/current.json?key=${api_key}&q=${city}`
   );
+  console.log(
+    `https://api.weatherapi.com/v1/current.json?key=${api_key}&q=${city}`
+  );
   const dataJson = await apiData.json();
   const current = dataJson.current;
   const cityName = dataJson.location.name;
