@@ -9,6 +9,7 @@ async function getCurrentWeatherData(city) {
   const cityName = dataJson.location.name;
   const country = dataJson.location.country;
   const condition = current.condition.text;
+  const conditionIcon = current.condition.icon;
   const temp_c = current.temp_c;
   const temp_f = current.temp_f;
   const humidity = current.humidity;
@@ -19,6 +20,7 @@ async function getCurrentWeatherData(city) {
     cityName,
     country,
     condition,
+    conditionIcon,
     temp_c,
     temp_f,
     humidity,
