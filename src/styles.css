@@ -1,0 +1,49 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: row;
+  display: block;
+  margin: 30px auto;
+}
+
+.input {
+  width: 300px;
+  padding: 5px;
+  margin-right: 20px;
+}
+
+.submit {
+  padding: 5px;
+  width: 100px;
+}
+
+.weather-container {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 20%;
+  border-radius: 16px;
+  margin-top: 20px;
+  line-height: 2;
+}
+
+.has-content {
+  background-color: gainsboro;
+  border: 1px solid grey;
+}
+
+.gif-container {
+  display: block;
+  margin: 20px auto;
+  border-radius: 16px;
+}
+
+.gif {
+  min-width: 400px;
+  max-width: 400px;
+}

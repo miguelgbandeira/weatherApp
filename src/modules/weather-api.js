@@ -2,10 +2,8 @@ const api_key = "9fd6ac1f89184d86976231049242903";
 
 async function getCurrentWeatherData(city) {
   const apiData = await fetch(
-    `https://api.weatherapi.com/v1/current.json?key=${api_key}&q=${city}`
-  );
-  console.log(
-    `https://api.weatherapi.com/v1/current.json?key=${api_key}&q=${city}`
+    `https://api.weatherapi.com/v1/current.json?key=${api_key}&q=${city}`,
+    { mode: "cors" }
   );
   const dataJson = await apiData.json();
   const current = dataJson.current;
